@@ -3,7 +3,7 @@
     <p class="description">Rules allow you to create groups within your organization and set standards for test results. For example, you may want to test unvaccinated faculty more frequently than those who have been vaccinated.</p>
     <h3 class="mt-4">Your organization's rules</h3>
     <div class="tab-sub-content">
-      <RulesCard
+      <RuleCard
         v-for="(rule, index) in rules"
         v-bind:rule="rule"
         v-bind:index="index"
@@ -18,10 +18,10 @@
   </div>
 </template>
 <script>
-import RulesCard from '../../components/RulesCard.vue'
+import RuleCard from '../../components/RuleCard.vue'
 export default {
   name: 'TestingRules',
-  components: { RulesCard },
+  components: { RuleCard },
   data () {
     return {
       rules: [
@@ -35,7 +35,7 @@ export default {
           titleType: 'STUDENTS',
           title: 'Athlete testing',
           memberCounts: 45,
-          progress: 52
+          progress: 35
         }
       ]
     }

@@ -5,14 +5,15 @@
       <div class="form-container">
         <div class="container-left">
           <div class="receive-email-container">
-            <img src="@/assets/temp_src/receive_email_notifications.png" alt="">
+            <icon-switch :switchData="switchEmail" />
             <p class="text-sendtoemail">Emails will be sent to</p>
             <a href="">Change Email</a><br/>
           </div>
           <div class="receive-sms-container">
-            <img src="@/assets/temp_src/receive_sms_notifications.png" alt=""><br/>
+            <icon-switch :switchData="switchSMS"/>
           </div>
           <div class="phone-number-container">
+            <PhoneInput />
             <img src="@/assets/temp_src/receive_sms_notifications.png" alt="">
           </div>
           <p>Only For SMS Notification</p>
@@ -30,6 +31,28 @@
     </form>
   </div>
 </template>
+<script>
+import PhoneInput from '../../components/PhoneInput.vue'
+import IconSwitch from '../../components/IconSwitch.vue'
+export default {
+  name: 'TestingNotifications',
+  components: { IconSwitch, PhoneInput },
+  data () {
+    return {
+      switchEmail: {
+        label: 'Receive email notifications',
+        icon: 'icon-email.svg',
+        type: 'email-noti'
+      },
+      switchSMS: {
+        label: 'Receive SMS notifications',
+        icon: 'icon-comment.svg',
+        type: 'email-noti'
+      }
+    }
+  }
+}
+</script>
 
 <style>
   .tab-content{

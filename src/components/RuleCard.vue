@@ -9,14 +9,16 @@
       <p class="circle-mark mt-2">+{{rule.memberCounts}}</p>
     </div>
     <div>
-      <img src="@/assets/temp_src/progress-bar.png" alt="">
-      <a class="mt-5" href="">Edit</a>
+      <progress-bar :progress="rule.progress"></progress-bar>
+      <a style="margin-top: 10px" href="">Edit</a>
     </div>
   </div>
 </template>
 <script>
+import ProgressBar from './ProgressBar.vue'
 export default {
-  name: 'RulesCard',
+  name: 'RuleCard',
+  components: { ProgressBar },
   props: ['rule']
 }
 </script>
