@@ -36,6 +36,10 @@
     padding:20px;
     margin:0px 10px;
   }
+  .description {
+    width: 50%;
+    padding-right: 20px;
+  }
   .form-container{
     margin:20px 0px;
     display:flex;

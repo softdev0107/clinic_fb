@@ -52,7 +52,7 @@ export default {
     width: 100%;
     height: 60px;
     padding: 10px;
-    background-color: aqua;
+    background-color: #F4F3F4;
     display: inline-flex;
 
   }
