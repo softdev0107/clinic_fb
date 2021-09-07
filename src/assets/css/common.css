@@ -28,3 +28,117 @@ input[type=number]::-webkit-outer-spin-button {
   background-color: rgb(221, 221, 221);
 }
 
+
+
+@media screen and (max-width: 768px) {
+  .header {
+    height: 50px;
+    padding: 5px;
+  }
+  .logo {
+    width: 20px;
+    height: 20px;
+  }
+  .header h5 {
+    font-size: 16px;
+  }
+
+  .header .avatar {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+  }
+
+  .select-multiline image {
+    width: 10px;
+    height: 10px;
+  }
+
+  .profile-container {
+    margin-left: 10px;
+  }
+
+  .select-multiline-container {
+    margin-left: 5px;
+  }
+
+  .select-multiline {
+    font-size: 12px;
+  }
+  
+  .select-multiline span{
+    display: none;
+  }
+
+  .header .setting-icon {
+    width: 20px;
+    height: 20px;
+  }
+
+  .tab-nav {
+    padding: 5px 10px;
+
+  }
+
+  .tab-nav a {
+    display: inline-block;
+    width: 23%;
+    padding: 5px;
+    font-size: 14px;
+  }
+
+  .tab-content {
+    margin: 0;
+  }
+
+  .description {
+    width: 100%;
+  }
+  
+  .form-container {
+    display: block;
+  }
+
+  .container-right {
+    margin-top: 40px;
+  }
+
+  .input-checkbox {
+    white-space: normal;
+  }
+
+  .input-checkbox label {
+    display: inline;
+    padding-left: 5px;
+  }
+
+  .button-submit {
+    margin-top: 10px;
+    font-size: 14px;
+    padding: 5px 10px;
+  }
+
+  .tab-sub-content .card-container {
+    width: 48%;
+    margin-top: 10px;
+  }
+
+  .tab-sub-content .card-new-container {
+    margin-top: 10px;
+  }
+
+}
+
+@media screen and (max-width: 480px) {
+  .header h5 {
+    font-size: 14px;
+  }
+  .tab-sub-content .card-container {
+    width: 100%;
+    margin-top: 10px;
+  }
+  .tab-sub-content .card-new-container {
+    width: 100%;
+    margin-top: 10px;
+  }
+}

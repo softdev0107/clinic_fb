@@ -20,13 +20,22 @@
         <div class="container-right">
           <label for="checkbox">Choose the frequency of your notifications</label>
           <div class="noti-group">
-            <div class="input-checkbox"><input type="checkbox" checked/><label>Daily remider notifications with link to dashboard</label></div>
-            <div class="input-checkbox"><input type="checkbox" checked/><label>Weekly reminder notification with link to dashboard</label></div>
-            <div class="input-checkbox"><input type="checkbox" checked/><label>Monthly reminder notification with link to dashboard</label></div>
+            <div class="input-checkbox field-br">
+              <input type="checkbox" id="daily_check" checked/>
+              <label for="daily_check">Daily remider notifications with link to dashboard</label>
+            </div>
+            <div class="input-checkbox field-br" id="weekly_check">
+              <input type="checkbox" checked/>
+              <label for="weekly_check">Weekly reminder notification with link to dashboard</label>
+            </div>
+            <div class="input-checkbox field-br" id="monthly_check">
+              <input type="checkbox" checked/>
+              <label for="monthly_check">Monthly reminder notification with link to dashboard</label>
+            </div>
           </div>
         </div>
       </div>
-      <input class="button-submit mt-5" type="submit" value="Save & Continue"/>
+      <input class="button-submit" type="submit" value="Save & Continue" />
     </form>
   </div>
 </template>
@@ -108,6 +117,7 @@ export default {
     padding-left:15px;
   }
   .button-submit{
+    margin-top: 35px;
     padding:10px 20px;
     background-color:blue;
     color:white;

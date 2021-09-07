@@ -2,17 +2,17 @@
     <div class="header d-flex justify-content-between header px-4 py-3">
       <div class="d-flex flex-row ">
         <div class="d-flex flex-row ">
-          <img class="logo" src="@/assets/logo.png" alt="">
+          <img class="logo align-self-center" src="@/assets/logo.png" width="40" height="40" alt="">
           <h5 class="d-flex align-items-center ms-1">Covid Clinic</h5>
         </div>
-        <div class="d-flex flex-row ms-5">
+        <div class="d-flex flex-row profile-container">
           <h5 class="bold avatar align-self-center">BM</h5>
-          <div class="d-flex flex-row ms-3">
+          <div class="d-flex flex-row select-multiline-container">
             <div class="select-multiline">
               <p>Bill Murray</p>
               <span>District Access</span>
             </div>
-            <img class="align-self-center select-btn" src="@/assets/icons/chevron-down.svg" width="20" height="20" alt="">
+            <img class="align-self-center select-btn" src="@/assets/icons/chevron-down.svg" alt="">
           </div>
 
           <!-- <select class="ms-1" name="username" id="sel-username">
@@ -22,7 +22,7 @@
           </select> -->
         </div>
       </div>
-      <img src="@/assets/icons/cog-solid.svg" alt="">
+      <img class="align-self-center setting-icon" src="@/assets/icons/cog-solid.svg" width="30" height="30" alt="">
     </div>
     <div class="menu">
       <router-link class="text-center menu-item"  to="/">Testing</router-link>
@@ -45,7 +45,19 @@ export default {
     width: 100%;
     height: 80px;
     padding: 10 20;
-    background-color: aquamarine;
+  }
+
+  .profile-container {
+    margin-left: 3rem;
+  }
+
+  .select-multiline-container {
+    margin-left: 1rem;
+  }
+
+  .select-multiline image {
+    width: 20px;
+    height:20px;
   }
 
   .menu {
@@ -95,6 +107,8 @@ export default {
     padding: 0 0 20px 0px;
   }
   .tab-nav a {
+    display: inline-block;
+    width: 10%;
     color:black;
     text-decoration:none;
     padding:20px 50px;

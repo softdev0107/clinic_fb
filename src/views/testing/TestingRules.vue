@@ -46,6 +46,7 @@ export default {
   .tab-sub-content  {
     display: inline-flex;
     margin: 30px 0;
+    flex-wrap: wrap;
   }
   .card-new-container {
     width: 270px;

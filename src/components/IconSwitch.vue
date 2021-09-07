@@ -42,4 +42,10 @@ export default {
   .form-switch .form-check-input{
     width: 2.5em;
   }
+
+  @media screen and (max-width: 768px) {
+    .switchbutton-container {
+      width: 100%;
+    }
+  }
 </style>

@@ -42,4 +42,10 @@ export default {
     display: block;
     outline: none !important;
   }
+
+  @media screen and (max-width: 768px) {
+    .phone-input-container {
+      width: 100%;
+    }
+  }
 </style>
