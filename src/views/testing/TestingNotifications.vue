@@ -14,7 +14,6 @@
           </div>
           <div class="phone-number-container">
             <PhoneInput />
-            <img src="@/assets/temp_src/receive_sms_notifications.png" alt="">
           </div>
           <p>Only For SMS Notification</p>
         </div>

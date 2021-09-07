@@ -30,6 +30,8 @@ export default {
   .phone-input-container label {
     margin: 0 10px;
     display: block;
+    color: rgb(182, 182, 182);
+    font-size: 12px;
   }
   .phone-input-container input {
     margin: 0 10px;
